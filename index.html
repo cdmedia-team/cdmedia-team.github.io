@@ -1,0 +1,2430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Document Title, Description, and Author -->
+    <title>Thiết kế Website</title>
+    <meta
+      name="description"
+      content="Wave is a Bootstrap 5 One Page Template."
+    />
+    <meta name="author" content="BootstrapBrain" />
+
+    <!-- Favicon and Touch Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/favicon/favicon-512x512.png"
+    />
+
+    <!-- Google Fonts Files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./assets/css/wave-bsb.css" />
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#bsb-tpl-navbar"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <!-- Header -->
+    <header
+      id="header"
+      class="sticky-top bsb-tpl-header-sticky bsb-tpl-header-sticky-animationX"
+    >
+      <!-- Navbar 1 - Bootstrap Brain Component -->
+      <nav
+        id="scrollspyNav"
+        class="navbar navbar-expand-lg wave-bg-black bsb-navbar bsb-navbar-hover bsb-navbar-caret bsb-tpl-navbar-sticky"
+        data-bsb-sticky-target="#header"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./assets/img/branding/logo.jpg"
+              class="bsb-tpl-logo"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                id="bsb-tpl-navbar"
+                class="navbar-nav justify-content-end flex-grow-1"
+              >
+                <li class="nav-item ">
+                  <a
+                    class="nav-link active text-light"
+                    href="#scrollspyNav"
+                    aria-current="page"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="#scrollspyPricing"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Bảng giá</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="#scrollspyServices"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Dịch vụ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="#scrollspyPortfolio"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Sản phẩm</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="#scrollspyAbout"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Về chúng tôi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="#scrollspyFeedback"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Feedback</a
+                  >
+                </li>
+                <!--
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="#scrollspyBlog"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Blog</a
+                  >
+                </li>
+                -->
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    href="#scrollspyContact"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero 2 - Bootstrap Brain Component -->
+    <section id="scrollspyHero" class="wave-bg-black py-5 py-xl-8 py-xxl-10">
+      <div class="container overflow-hidden">
+        <div
+          class="row gy-5 gy-lg-0 align-items-lg-center justify-content-lg-between"
+        >
+          <div class="col-12 col-lg-6 order-1 order-lg-0">
+            <h1 class="display-3 fw-bolder mb-3 text-light">
+              Tư vấn và thiết kế <br /><span class="wave-font-hw my-3 display-2 text-light fw-normal"
+                  >Website</span
+                >
+               </br>chuyên nghiệp, tận tâm.
+            </h1>
+            <p class="fs-4 mb-5 text-light">
+              Chúng tôi tự hào cung cấp cho khách hàng các sản phẩm chất lượng,
+              dịch vụ chuyên nghiệp và tận tâm.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex">
+              <button
+                type="button"
+                class="btn btn-primary btn-2xl rounded-pill px-4 gap-3"
+              >
+                Liên hệ
+              </button>
+              <button
+                type="button"
+                class="btn btn-success btn-outline-dark btn-2xl rounded-pill px-4"
+              >
+               <span class="text-light"> Chi tiết >> </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 text-center">
+            <img
+              class="img-fluid mask-position-center-center mask-repeat-no-repeat mask-size-auto"
+              loading="lazy"
+              src="./assets/img/landingpage/first_img.png"
+              alt=""
+              style="
+                -webkit-mask-image: url(./assets/img/hero/hero-blob-1.svg);
+                mask-image: url(./assets/img/hero/hero-blob-1.svg);
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section - Pricing -->
+    <!-- Pricing 1 - Bootstrap Brain Component -->
+    <section
+      id="scrollspyPricing"
+      class="wave-bg-sea-shell py-5 py-xl-8 py-xxl-16"
+    >
+      <div class="container">
+        <div class="row gy-5 gy-lg-0 gx-lg-8 align-items-center">
+          <div class="col-12 col-lg-3">
+            <h2 class="display-3 fw-bolder mb-4">
+              Bảng giá thiết kế
+              <mark class="wave-highlight wave-highlight-yellow"
+                ><span class="wave-font-hw display-1 text-accent fw-normal"
+                  >Website</span
+                ></mark
+              >
+            </h2>
+            <p class="fs-4 mb-4 mb-xl-5">
+              Lựa chọn các gói thiết kế Website phù hợp với doanh nghiệp của
+              bạn.
+            </p>
+            <strong class="fs-4 mb-4 mb-xl-5">
+              Lựa chọn website mẫu:
+            </strong>
+            <p  style="font-size: 18px; margin-bottom: 8px;">
+             - Hơn 50 giao diện mẫu đẹp
+            </p>
+            <p  style="font-size: 18px;margin-bottom: 8px;">
+              - Lựa chọn giao diện mẫu
+             </p>
+             <p  style="font-size: 18px;margin-bottom: 8px;">
+              - Sở hữu nhanh chóng 5-7 ngày
+             </p>
+             <p  style="font-size: 18px;margin-bottom: 8px;">
+              - Trọn gói không phát sinh chi phí
+             </p>
+           <br>
+            <strong class="fs-4 mb-xl-5" style="margin-top:44px">
+              Thiết kế theo yêu cầu:
+            </strong>
+            <p  style="font-size: 18px; margin-bottom: 8px;">
+             - Ý tưởng riêng biệt
+            </p>
+            <p  style="font-size: 18px;margin-bottom: 8px;">
+              - Thiết kế nhận diện thương hiệu
+             </p>
+             <p  style="font-size: 18px;margin-bottom: 8px;">
+              - Tối ưu hiệu suất trải nghiệm người dùng
+             </p>
+             <p  style="font-size: 18px;margin-bottom: 8px;">
+              - Khả năng mở rộng và tích hợp
+             </p>
+             <p  style="font-size: 18px;margin-bottom: 8px;">
+              - Website tốc độ cao và ổn định
+             </p>
+            <!--
+
+           
+            <a href="#!" class="btn btn-2xl btn-primary rounded-pill"
+              >More Plans</a
+            >
+             -->
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="row gy-4 gy-md-0 gx-xxl-5">
+              <div class="col-12 col-md-6">
+                <div
+                  class="card border-0 border-bottom border-primary shadow-sm"
+                >
+                  <div class="card-body p-4 p-xxl-5">
+                    <h2 class="h4 mb-2">Cơ bản</h2>
+                    <h5 class="display-3 fw-bold text-primary mb-0">
+                      2.000.000
+                    </h5>
+                    <p class="text-secondary mb-4">VNĐ</p>
+                    <ul class="list-group list-group-flush mb-4">
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong>Phù hợp:</strong> Shop bán hàng / website cá nhân</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong>Tặng</strong> domain 1 năm: com/net/org/biz</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong> Chọn website nhanh theo mẫu trong hệ thống</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-x text-danger"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                        <span><strong></strong>Lập website theo giao diện khách hàng yêu cầu</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong> Tặng hosting không giới hạn băng thông 1 năm: 1GB</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-x text-danger"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                        <span><strong></strong>Logo, banner, email doanh nghiệp: + 500K</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Hệ thống quản lý nội dung sản phẩm</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Công nghệ responsive</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-x text-danger"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                        <span><strong></strong>Thương mại điện tử (Ecommerce)</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-x text-danger"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                        <span>Tạo livechat trên web</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Tích hợp Google Map và Contact Forms</span>
+                      </li> <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Bảo hành website miễn phí trọn đời</span>
+                      </li>
+                    </ul>
+                    <a href="#!" class="btn btn-xl btn-accent rounded-pill"
+                      >Chọn</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="card border-0 border-bottom border-primary shadow-sm"
+                >
+                  <div class="card-body p-4 p-xxl-5">
+                    <h2 class="h4 mb-2">Cao cấp</h2>
+                    <h5 class="display-3 fw-bold text-primary mb-0">
+                      3.500.000
+                    </h5>
+                    <p class="text-secondary mb-4">VNĐ</p>
+                    <ul class="list-group list-group-flush mb-4">
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong>Phù hợp:</strong> Công ty khởi nghiệp</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong>Tặng</strong> domain 1 năm: com/net/org/biz</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong> Chọn website nhanh theo mẫu trong hệ thống</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong> Lập website theo giao diện khách hàng yêu cầu</span>
+                      </li>
+                      
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong> Tặng hosting không giới hạn băng thông 1 năm: 1GB</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-x text-danger"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                        <span><strong></strong>Logo, banner, email doanh nghiệp: + 500K</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Hệ thống quản lý nội dung sản phẩm</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Công nghệ responsive</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Thương mại điện tử (Ecommerce)</span>
+                      </li>
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Tạo livechat trên web</span>
+                      </li>
+                      
+                      <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Tích hợp Google Map và Contact Forms</span>
+                      </li> <li class="list-group-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                          />
+                        </svg>
+                        <span><strong></strong>Bảo hành website miễn phí trọn đời</span>
+                      </li>
+                    </ul>
+                    <a href="#!" class="btn btn-xl btn-accent rounded-pill"
+                      >Chọn</a
+                    >
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main -->
+    <main id="main">
+      <!-- Section - Services -->
+      <!-- Service 3 - Bootstrap Brain Component -->
+     
+      <section id="scrollspyServices" class="py-5 py-xl-8 py-xxl-16">
+        <div class="container mb-5 mb-md-6 mb-xl-10">
+          <div class="row justify-content-md-center">
+            <div
+              class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center"
+            >
+              <h2 class="display-3 fw-bolder mb-4">
+                Thiết kế
+                <mark class="wave-highlight wave-highlight-yellow"
+                  ><span class="wave-font-hw display-1 text-accent fw-normal"
+                    >Website</span
+                  ></mark
+                >
+              theo ngành
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container overflow-hidden">
+          <div class="row gy-5 gy-md-6 gx-md-4 gy-lg-0 gx-xxl-5">
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="badge wave-bg-yellow text-primary p-3 mb-4">
+                <i class="fas fa-tshirt" style="font-size: 24px;"></i>
+              </div>
+              <h4 class="mb-3">Thời trang</h4>
+              <p class="mb-3 text-secondary">
+                Vestibulum bibendum, lorem a blandit lacinia
+              </p>
+              <a href="#!" class="fw-bold text-decoration-none link-primary">
+                Xem thêm
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="badge wave-bg-green text-primary p-3 mb-4">
+                <i class="fas fa-building"  style="font-size: 24px;"></i>
+              </div>
+              <h4 class="mb-3">Bất động sản</h4>
+              <p class="mb-3 text-secondary">
+                Vestibulum bibendum, lorem a blandit lacinia
+              </p>
+              <a href="#!" class="fw-bold text-decoration-none link-primary">
+                Xem thêm
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="badge wave-bg-pink text-primary p-3 mb-4">
+                <i class="fas fa-microchip" style="font-size: 24px;"></i>
+              </div>
+              <h4 class="mb-3">Công nghệ</h4>
+              <p class="mb-3 text-secondary">
+                Vestibulum bibendum, lorem a blandit lacinia
+              </p>
+              <a href="#!" class="fw-bold text-decoration-none link-primary">
+                Xem thêm
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="badge wave-bg-cyan text-primary p-3 mb-4">
+                <i class="fas fa-landmark" style="font-size: 24px;"></i>
+              </div>
+               <h4 class="mb-3">Doanh nghiệp</h4>
+              <p class="mb-3 text-secondary">
+                Vestibulum bibendum, lorem a blandit lacinia
+              </p>
+              <a href="#!" class="fw-bold text-decoration-none link-primary">
+                Xem thêm
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="badge wave-bg-orange text-primary p-3 mb-4">
+                <i class="fas fa-hamburger" style="font-size: 24px;"></i>
+              </div>
+               <h4 class="mb-3">Thực phẩm</h4>
+              <p class="mb-3 text-secondary">
+                Vestibulum bibendum, lorem a blandit lacinia
+              </p>
+              <a href="#!" class="fw-bold text-decoration-none link-primary">
+                Xem thêm
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="badge wave-bg-grape text-primary p-3 mb-4">
+                <i class="fas fa-flag" style="font-size: 24px;"></i>
+              </div>
+               <h4 class="mb-3">Khác</h4>
+              <p class="mb-3 text-secondary">
+                Vestibulum bibendum, lorem a blandit lacinia
+              </p>
+              <a href="#!" class="fw-bold text-decoration-none link-primary">
+                Xem thêm
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+         
+      </section>
+      <section id="scrollspyServices" class="py-5 bg-gray">
+      <!-- Fact 1 - Bootstrap Brain Component -->
+      <div class="container py-5  ">
+        <div class="row justify-content-md-center">
+          <div
+            class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center"
+          >
+            <h2 class="display-3 fw-bolder mb-4">
+             4 lý do nên chọn
+              <mark class="wave-highlight wave-highlight-yellow"
+                ><span class="wave-font-hw display-1 text-accent fw-normal"
+                  >CD Media</span
+                ></mark
+              >
+           
+            </h2>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+              <div class="card-body text-center p-4 p-xxl-5">
+                <div
+                  class="btn btn-primary btn-circle btn-circle-4xl wave-bg-yellow border-0 text-primary pe-none mb-2"
+                >
+                <?xml version="1.0" encoding="utf-8"?>
+
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                   width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+                <style type="text/css">
+                  .avocado_zestien{fill:#E598A3;}
+                  .avocado_een{fill:#231F20;}
+                  .avocado_acht{fill:#A3AEB5;}
+                  .st0{fill:#EAD13F;}
+                  .st1{fill:#CC4121;}
+                  .st2{fill:#FFFAEE;}
+                  .st3{fill:#E0A838;}
+                  .st4{fill:#D1712A;}
+                  .st5{fill:#788287;}
+                  .st6{fill:#C3CC6A;}
+                  .st7{fill:#6F9B45;}
+                  .st8{fill:#248EBC;}
+                  .st9{fill:#8D3E93;}
+                  .st10{fill:#3D3935;}
+                  .st11{fill:#D36781;}
+                  .st12{fill:#716558;}
+                  .st13{fill:#AF9480;}
+                  .st14{fill:#DBD2C1;}
+                  .st15{fill:#231F20;}
+                </style>
+                <g>
+                  <g>
+                    <path class="avocado_zestien" d="M20.781,31.481c-0.23,0-0.429-0.156-0.485-0.379l-0.272-1.089l-0.473,0.103
+                      c-1.124,0.242-2.318,0.365-3.55,0.365c-0.871,0-1.754-0.067-2.623-0.2l-0.451-0.069l-0.222,0.891
+                      c-0.056,0.223-0.255,0.379-0.485,0.379H8.281c-0.155,0-0.299-0.07-0.394-0.192c-0.096-0.122-0.128-0.278-0.091-0.429l0.598-2.39
+                      l-0.278-0.197c-1.372-0.976-2.369-2.233-2.964-3.738l-0.092-0.232l-2.191-0.602C2.651,23.641,2.5,23.443,2.5,23.219v-4.475
+                      c0-0.225,0.151-0.423,0.368-0.482l2.191-0.602l0.092-0.232c1.472-3.724,5.528-5.946,10.85-5.946c6.329,0,10.692,3.069,11.386,8.01
+                      l0.037,0.261l1.565,0.782c0.173,0.087,0.277,0.254,0.277,0.447c0,0.193-0.104,0.36-0.276,0.447l-1.565,0.782l-0.037,0.261
+                      c-0.293,2.088-1.205,3.828-2.71,5.172l-0.225,0.201l0.754,3.016c0.037,0.15,0.004,0.307-0.091,0.429
+                      c-0.095,0.122-0.239,0.192-0.394,0.192H20.781z"/>
+                  </g>
+                  <g>
+                    <path class="avocado_acht" d="M14.013,14.5C13.681,14.063,13.5,13.539,13.5,13c0-1.379,1.122-2.5,2.5-2.5s2.5,1.121,2.5,2.5
+                      c0,0.539-0.181,1.063-0.513,1.5H14.013z M14.5,7c0-1.379-1.122-2.5-2.5-2.5S9.5,5.621,9.5,7s1.122,2.5,2.5,2.5S14.5,8.379,14.5,7z
+                       M20.5,3c0-1.379-1.122-2.5-2.5-2.5S15.5,1.621,15.5,3s1.122,2.5,2.5,2.5S20.5,4.379,20.5,3z"/>
+                  </g>
+                  <path class="avocado_een" d="M12,10c1.657,0,3-1.343,3-3s-1.343-3-3-3S9,5.343,9,7S10.343,10,12,10z M12,5
+                    c1.103,0,2,0.897,2,2s-0.897,2-2,2s-2-0.897-2-2S10.897,5,12,5z M18,6c1.657,0,3-1.343,3-3s-1.343-3-3-3s-3,1.343-3,3
+                    S16.343,6,18,6z M18,1c1.103,0,2,0.897,2,2s-0.897,2-2,2s-2-0.897-2-2S16.897,1,18,1z M29.211,20.106l-1.33-0.665
+                    c-0.681-4.849-4.546-7.625-9.526-8.279C17.805,10.459,16.96,10,16,10c-0.958,0-1.8,0.457-2.35,1.155
+                    c-4.182,0.549-7.577,2.596-8.964,6.107l-1.95,0.535C2.301,17.917,2,18.312,2,18.763v4.475c0,0.45,0.301,0.845,0.735,0.964
+                    l1.95,0.535c0.649,1.643,1.735,2.964,3.139,3.962l-0.515,2.058C7.153,31.389,7.63,32,8.281,32h3.938
+                    c0.459,0,0.859-0.312,0.97-0.758l0.112-0.448C14.17,30.926,15.071,31,16,31c1.275,0,2.503-0.128,3.656-0.377l0.155,0.619
+                    C19.922,31.688,20.322,32,20.781,32h3.938c0.651,0,1.128-0.611,0.97-1.243l-0.681-2.722c1.523-1.361,2.551-3.188,2.872-5.476
+                    l1.33-0.665C29.948,21.526,29.948,20.474,29.211,20.106z M18,13c0,0.411-0.124,0.745-0.277,1h-3.446C14.124,13.745,14,13.411,14,13
+                    c0-1.103,0.897-2,2-2S18,11.897,18,13z M26.964,21.9l-0.073,0.52c-0.276,1.967-1.133,3.605-2.548,4.869l-0.45,0.402L24.719,31
+                    h-3.938l-0.39-1.559l-0.946,0.204C18.356,29.881,17.197,30,16,30c-0.844,0-1.701-0.065-2.548-0.194l-0.9-0.137L12.219,31H8.281
+                    l0.68-2.72l-0.556-0.395c-1.292-0.918-2.23-2.1-2.789-3.515l-0.184-0.465l-0.482-0.132L3,23.237v-4.475l1.951-0.535l0.482-0.132
+                    l0.184-0.465c1.114-2.818,3.834-4.707,7.484-5.36C13.041,12.505,13,12.747,13,13c0,0.353,0.069,0.687,0.183,1H12v1h8v-1h-1.183
+                    C18.931,13.687,19,13.353,19,13c0-0.256-0.042-0.5-0.102-0.737c3.822,0.691,7.366,2.853,7.993,7.317l0.073,0.52l1.8,0.9
+                    L26.964,21.9z"/>
+                </g>
+                </svg>
+                </div>
+                <h3 class="h4 mb-2">Tiết kiệm chi phí</h3>
+                <p class="fs-5 mb-0 text-dark">Chúng tôi cung cấp sản phẩm chất lượng cao với chi phí tốt nhất, kèm theo nhiều ưu đãi hấp dẫn.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+              <div class="card-body text-center p-4 p-xxl-5">
+                <div
+                  class="btn btn-primary btn-circle btn-circle-4xl wave-bg-green border-0 text-primary pe-none mb-2"
+                >
+                <?xml version="1.0" encoding="utf-8"?>
+
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                   width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+                <style type="text/css">
+                  .avocado_een{fill:#231F20;}
+                  .avocado_zes{fill:#FFFAEE;}
+                  .avocado_twintig{fill:#EAD13F;}
+                  .avocado_negen{fill:#6F9B45;}
+                  .avocado_twaalf{fill:#248EBC;}
+                  .avocado_achttien{fill:#D1712A;}
+                  .avocado_zeventien{fill:#CC4121;}
+                  .avocado_dertien{fill:#8D3E93;}
+                  .avocado_vijf{fill:#DBD2C1;}
+                  .avocado_acht{fill:#A3AEB5;}
+                  .avocado_zeven{fill:#788287;}
+                  .st0{fill:#3D3935;}
+                  .st1{fill:#E0A838;}
+                  .st2{fill:#716558;}
+                  .st3{fill:#AF9480;}
+                  .st4{fill:#C3CC6A;}
+                </style>
+                <g>
+                  <g>
+                    <rect x="0.5" y="4.5" class="avocado_vijf" width="31" height="21"/>
+                  </g>
+                  <g>
+                    <path class="avocado_acht" d="M0.5,4.5v21h13v4h6v-4h12v-21H0.5z M30,24H2V6h28V24z"/>
+                  </g>
+                  <rect x="13.5" y="25.5" class="avocado_zeven" width="6" height="1.5"/>
+                  <g>
+                    <rect x="21" y="12" class="avocado_twintig" width="3" height="3"/>
+                  </g>
+                  <g>
+                    <rect x="21" y="15" class="avocado_achttien" width="3" height="3"/>
+                  </g>
+                  <rect x="21" y="18" class="avocado_zeventien" width="3" height="3"/>
+                  <g>
+                    <rect x="24" y="18" class="avocado_dertien" width="3" height="3"/>
+                  </g>
+                  <rect x="24" y="15" class="avocado_twaalf" width="3" height="3"/>
+                  <rect x="24" y="12" class="avocado_negen" width="3" height="3"/>
+                  <path class="avocado_zes" d="M5,9h14v12H5V9z M21,9v3h3V9H21z"/>
+                  <path class="avocado_een" d="M32,26V4H0v22h13v3h-1v1h9v-1h-1v-3H32z M1,25V5h30v20H1z M19,29h-5v-3h5V29z M27,12h-3V9h3V12z
+                    "/>
+                </g>
+                </svg>
+                </div>
+                <h3 class="h4 mb-2">Thiết kế chuyên nghiệp</h3>
+                <p class="fs-5 mb-0 text-secondary">Phong cách thiết kế Website được cập nhật theo xu hướng mới nhất giúp tạo sự mới mẻ và tăng chuyển đổi bán hàng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+              <div class="card-body text-center p-4 p-xxl-5">
+                <div
+                  class="btn btn-primary btn-circle btn-circle-4xl wave-bg-pink border-0 text-primary pe-none mb-2"
+                >
+                  <svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M599.18848 470.48704m-345.18528 0a345.18528 345.18528 0 1 0 690.37056 0 345.18528 345.18528 0 1 0-690.37056 0Z" fill="#FFEC43" /><path d="M599.18336 823.5264c-194.66752 0-353.04448-158.37696-353.04448-353.04448S404.52096 117.4528 599.18336 117.4528s353.04448 158.36672 353.04448 353.02912-158.37696 353.04448-353.04448 353.04448z m0-690.37568c-186.00448 0-337.33632 151.33696-337.33632 337.33632 0 186.0096 151.32672 337.34656 337.33632 337.34656s337.33632-151.33696 337.33632-337.34656c0-185.99936-151.32672-337.33632-337.33632-337.33632z" fill="#6B0204" /><path d="M203.83232 770.58048c4.26496 5.56032 2.176 14.32064-4.66944 19.56864l-65.33632 50.10944c-6.84544 5.248-15.8464 4.99712-20.11136-0.5632-4.26496-5.56032-2.176-14.32064 4.66944-19.56864l65.33632-50.10944c6.84032-5.248 15.8464-4.99712 20.11136 0.5632zM218.85952 852.56704c4.26496 5.56032 2.176 14.32064-4.66944 19.56864l-65.33632 50.10944c-6.84544 5.248-15.8464 4.99712-20.11136-0.5632-4.26496-5.56032-2.176-14.32064 4.66944-19.56864l65.33632-50.10944c6.84544-5.25312 15.8464-4.99712 20.11136 0.5632zM128.55296 734.81216c4.26496 5.56032 2.176 14.32064-4.66944 19.56864l-65.33632 50.10944c-6.84544 5.248-15.8464 4.99712-20.11136-0.5632-4.26496-5.56032-2.176-14.32064 4.66944-19.56864l65.33632-50.10944c17.48992-13.41952 21.73952 2.688 20.11136 0.5632z" fill="#6C0000" /><path d="M336.03584 451.57376S241.68448 394.15808 71.5264 538.3168l164.0192 72.28928 100.49024-159.03232z" fill="#BED5E9" /><path d="M238.5664 620.52864l-181.69344-80.09216 9.57952-8.1152c97.44896-82.55488 171.008-99.8912 215.552-99.8912 37.248 0 57.27232 11.92448 58.112 12.43648l6.81984 4.15232-108.36992 171.50976z m-152.2688-84.28032l146.22208 64.44544 92.05248-145.67424c-7.98208-2.96448-22.34368-6.87616-42.56768-6.87616-40.45824 0-106.7776 15.55456-195.70688 88.10496z" fill="#6C0000" /><path d="M538.85952 716.04224s30.98624 106.0096-152.36608 232.96512l-27.28448-177.152 179.65056-55.81312z" fill="#BED5E9" /><path d="M380.64128 962.60608l-30.22848-196.2496 193.74592-60.17536 2.23744 7.66976c1.33632 4.55168 30.4384 112.92672-155.43808 241.6128l-10.3168 7.1424z m-12.64128-185.25696l24.31488 157.93152c138.07616-99.41504 142.6688-183.49568 140.26752-209.05984l-164.5824 51.12832z" fill="#6C0000" /><path d="M581.10464 683.12064c151.43424-116.13696 228.90496-269.3376 173.04064-342.18496-55.86944-72.84736-223.91808-37.75488-375.35744 78.38208-98.62656 75.63776-165.8368 166.98368-185.31328 241.63328l0.0512 0.01536a4.06016 4.06016 0 0 0-0.41472 1.49504c-0.1792 2.53952 93.87008 32.74752 100.48512 131.67616 0.0768 1.14176 0.53248 2.2528 1.23392 3.16928 0.896 1.16736 2.19648 2.01728 3.60448 2.22208a3.82976 3.82976 0 0 0 1.3568-0.09216c77.12768 0.50688 182.72768-40.71424 281.31328-116.31616z" fill="#BED5E9" /><path d="M298.81344 807.40864l-1.6128-0.128c-3.28704-0.47104-6.46656-2.39104-8.6272-5.22752a13.4144 13.4144 0 0 1-2.816-7.4496c-3.56864-53.248-34.176-94.38208-90.98752-122.20416-5.74464-2.81088-9.89696-4.84352-9.50272-10.48064 0.07168-1.024 0.27648-2.01728 0.62464-3.01568 20.77184-79.52896 91.08992-171.4176 188.11392-245.81632 96.32256-73.87648 202.75712-117.9904 284.71296-117.9904 45.90592 0 81.05472 14.20288 101.65248 41.05728 58.40384 76.16512-19.87072 234.60864-174.4896 353.20832-96.29696 73.84064-202.71616 117.9392-284.672 117.9392h-0.00512l-2.39104 0.10752z m-96.55808-148.82816c61.14304 30.12608 94.44864 74.86464 99.02592 133.00736 78.60736-0.0256 181.41696-42.89536 275.04128-114.70336 147.74784-113.32096 224.72192-261.88288 171.58656-331.17184-17.5104-22.83008-48.35328-34.90816-89.1904-34.90816-78.61248 0-181.47328 42.89536-275.15392 114.75456-92.58496 70.9888-160 157.73696-181.30944 233.02144z" fill="#6C0000" /><path d="M503.3216 728.69376L312.61696 477.37856a598.7328 598.7328 0 0 0-29.91616 33.96608l180.04992 237.28128a595.5584 595.5584 0 0 0 40.57088-19.93216z" fill="#FFFFFF" /><path d="M460.2624 758.32832L272.7168 511.1808l3.89632-4.79232a613.08416 613.08416 0 0 1 30.30016-34.42176l6.36416-6.71232 201.85088 266.01472-8.08448 4.34688a605.71648 605.71648 0 0 1-41.09824 20.18304l-5.6832 2.52928zM292.7104 511.55456l172.51328 227.34848a601.32864 601.32864 0 0 0 26.24512-12.82048L311.99232 489.54368a587.58656 587.58656 0 0 0-19.28192 22.01088z" fill="#6C0000" /><path d="M419.3792 774.8352l-171.10528-223.10912c-6.89152 8.62208-14.73536 20.84864-20.15232 33.6896l152.36096 200.97536c10.88512-1.45408 28.77952-7.13728 38.89664-11.55584z" fill="#FFFFFF" /><path d="M376.9856 794.76736l-157.86496-208.22528 1.7664-4.17792c5.06368-12.01664 12.80512-24.96512 21.248-35.5328l6.26176-7.84896 183.31648 239.03232-9.1904 4.01408c-10.58304 4.62848-29.27616 10.58304-41.00608 12.14464l-4.5312 0.59392z m-139.8016-210.39616l146.688 193.47456c6.85568-1.36704 15.47264-3.91168 22.912-6.53312L248.39168 564.7872a143.44704 143.44704 0 0 0-11.20768 19.584z" fill="#6C0000" /><path d="M556.5184 492.27264m-71.2192 0a71.2192 71.2192 0 1 0 142.4384 0 71.2192 71.2192 0 1 0-142.4384 0Z" fill="#ECF3FE" /><path d="M556.5184 571.33056c-43.5968 0-79.07328-35.456-79.07328-79.0528s35.47648-79.06816 79.07328-79.06816 79.06816 35.47136 79.06816 79.06816-35.46624 79.0528-79.06816 79.0528z m0-142.42304c-34.93888 0-63.36512 28.42624-63.36512 63.37024 0 34.93376 28.42624 63.36 63.36512 63.36s63.36-28.42624 63.36-63.36c0-34.944-28.42112-63.37024-63.36-63.37024z" fill="#6C0000" /><path d="M577.90464 436.29056c19.53792 10.0096 27.80672 33.41824 25.20064 56.7296-5.67808 50.88256-65.88416 56.3712-71.92576 54.3488a60.13952 60.13952 0 0 0 27.50976 6.6304c33.37216 0 60.42624-27.05408 60.42624-60.42624 0-26.6496-17.26464-49.2544-41.21088-57.28256z" fill="#BED5E9" /><path d="M953.2416 170.83392m-38.42048 0a38.42048 38.42048 0 1 0 76.84096 0 38.42048 38.42048 0 1 0-76.84096 0Z" fill="#FFC700" /><path d="M953.24672 217.09824c-25.51808 0-46.2848-20.75648-46.2848-46.26944s20.7616-46.26944 46.2848-46.26944 46.27456 20.75648 46.27456 46.26944-20.75648 46.26944-46.27456 46.26944z m0-76.84096a30.60736 30.60736 0 0 0-30.57152 30.57152 30.60736 30.60736 0 0 0 30.57152 30.57152 30.60224 30.60224 0 0 0 30.5664-30.57152 30.60736 30.60736 0 0 0-30.5664-30.57152z" fill="#6C0000" /><path d="M219.4944 205.66016m-28.81536 0a28.81536 28.81536 0 1 0 57.63072 0 28.81536 28.81536 0 1 0-57.63072 0Z" fill="#6C0000" /></svg>
+                </div>
+                <h3 class="h4 mb-2">Tối ưu tốc độ</h3>
+                <p class="fs-5 mb-0 text-secondary">Tốc độ tải trang và tối ưu SEO cho website luôn được đội ngũ ưu tiên hàng đầu để mang lại nhiều chuyển đổi hơn cho KH.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-xl-3">
+            
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+              <div class="card-body text-center p-4 p-xxl-5">
+                <div
+                  class="btn btn-primary btn-circle btn-circle-4xl wave-bg-cyan border-0 text-primary pe-none mb-2"
+                >
+                <svg width="800px" height="800px" viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><defs><style>
+                  .cls-1 {
+                    fill: #e7ecef;
+                  }
+            
+                  .cls-2 {
+                    fill: #8b8c89;
+                  }
+            
+                  .cls-3 {
+                    fill: #bc6c25;
+                  }
+            
+                  .cls-4 {
+                    fill: #a3cef1;
+                  }
+            
+                  .cls-5 {
+                    fill: #dda15e;
+                  }
+            
+                  .cls-6 {
+                    fill: #6096ba;
+                  }
+            
+                  .cls-7 {
+                    fill: #274c77;
+                  }
+                </style></defs><path class="cls-5" d="M26.58,39.04l-3,1.29c-1.01,.43-2.15,.43-3.15,0l-3-1.29c-1.47-.63-2.42-2.08-2.42-3.68v-5.36c0-3.31,2.69-6,6-6h2c3.31,0,6,2.69,6,6v5.36c0,1.6-.95,3.05-2.42,3.68Z"/><path class="cls-7" d="M35.14,45c-1.82-1.85-4.35-3-7.14-3h-3c0,1.66-1.34,3-3,3s-3-1.34-3-3h-3c-5.52,0-10,4.48-10,10v7H28l4-14h3.14Z"/><path class="cls-5" d="M17,55h2c1.1,0,2,.9,2,2v2h-4v-4h0Z"/><path class="cls-7" d="M12,31.73c-.29,.17-.64,.27-1,.27-1.1,0-2-.9-2-2s.9-2,2-2c.42,0,.81,.13,1.14,.36"/><path class="cls-7" d="M32,31.73c.29,.17,.64,.27,1,.27,1.1,0,2-.9,2-2s-.9-2-2-2c-.42,0-.81,.13-1.14,.36"/><path class="cls-3" d="M19,39.71l1.42,.61c1.01,.44,2.15,.44,3.16,0l1.42-.61v2.29c0,1.66-1.34,3-3,3s-3-1.34-3-3v-2.29Z"/><polyline class="cls-2" points="28 59 32 45 54 45 50 59"/><path class="cls-7" d="M28.4,27.38h-.01c-.57-.23-1.23-.38-2.06-.38-4.33,0-4.33,4-8.67,4-1.13,0-1.97-.27-2.66-.67v-.33c0-3.31,2.69-6,6-6h2c2.37,0,4.42,1.38,5.39,3.38h.01Z"/><path class="cls-1" d="M29,34.6v-4.6c0-3.31-2.69-6-6-6h-2c-3.31,0-6,2.69-6,6v4h-2c-.55,0-1-.45-1-1v-3c0-5.52,4.48-10,10-10,2.76,0,5.26,1.12,7.07,2.93s2.93,4.31,2.93,7.07v3.18c0,.48-.34,.89-.8,.98l-2.2,.44Z"/><path class="cls-4" d="M41,51c.55,0,1,.45,1,1s-.45,1-1,1v-2Z"/><path class="cls-6" d="M22,36h0c-.11-.54,.24-1.07,.78-1.18l8.22-1.64v-2.86c0-4.79-3.61-8.98-8.38-9.3-5.24-.35-9.62,3.81-9.62,8.98v3h2v2h-2c-1.1,0-2-.9-2-2v-2.68c0-5.72,4.24-10.74,9.94-11.27,6.54-.62,12.06,4.53,12.06,10.95v3.18c0,.95-.67,1.77-1.61,1.96l-8.22,1.64c-.54,.11-1.07-.24-1.18-.78Z"/><path class="cls-6" d="M22,59h-2v-2c0-.55-.45-1-1-1h-7c-.55,0-1-.45-1-1v-4c0-.27,.11-.52,.29-.71l1.29-1.29c.39-.39,1.02-.39,1.41,0h0c.39,.39,.39,1.02,0,1.41l-1,1v2.59h6c1.66,0,3,1.34,3,3v2Z"/><rect class="cls-4" height="2" width="50" x="4" y="59"/><path class="cls-7" d="M37,10.45l3.07-1.02c.72-.24,1.51-.05,2.05,.48l10.98,10.98c.54,.54,.72,1.33,.48,2.05l-1.02,3.07,4.24,4.24,2.64-4.39c.94-1.57,.7-3.59-.6-4.89L42.03,4.17c-1.3-1.3-3.31-1.55-4.89-.6l-4.39,2.64,4.24,4.24Z"/><path class="cls-4" d="M33.46,13.98c-.57-.57-.88-1.32-.88-2.12s.31-1.55,.88-2.12l1.41,1.42c-.19,.19-.29,.44-.29,.71s.1,.52,.29,.71l-1.41,1.42Z"/><path class="cls-4" d="M31.34,16.11c-2.34-2.34-2.34-6.15,0-8.49l1.41,1.41c-1.56,1.56-1.56,4.1,0,5.66l-1.41,1.41Z"/><path class="cls-4" d="M29.22,18.23c-3.51-3.51-3.51-9.22,0-12.73l1.41,1.41c-2.73,2.73-2.73,7.17,0,9.9l-1.41,1.41Z"/><path class="cls-4" d="M51.14,30.42c-.77,0-1.54-.29-2.12-.88l1.41-1.42c.39,.39,1.02,.39,1.42,0l1.41,1.42c-.58,.58-1.35,.88-2.12,.88Z"/><path class="cls-4" d="M51.14,33.42c-1.54,0-3.07-.58-4.24-1.75l1.41-1.41c1.56,1.56,4.1,1.56,5.66,0l1.41,1.41c-1.17,1.17-2.71,1.75-4.24,1.75Z"/><path class="cls-4" d="M51.14,36.42c-2.3,0-4.61-.88-6.36-2.63l1.41-1.41c2.73,2.73,7.17,2.73,9.9,0l1.41,1.41c-1.75,1.75-4.06,2.63-6.36,2.63Z"/></svg>
+                </div>
+                <h3 class="h4 mb-2">Hỗ trợ tận tình+</h3>
+                <p class="fs-5 mb-0 text-secondary">Khi bạn gặp khó khăn đừng ngần ngại hãy liên hệ vớ đội ngũ CD Media ngay để được hỗ trợ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+      <!-- Call To Action 1 - Bootstrap Brain Component -->
+      <!--  
+      <section
+        class="px-2 py-8 py-xxl-16 background-position-center background-size-cover background-attachment-fixed bsb-overlay"
+        style="background-image: url('./assets/img/cta/cta-img-2.jpg')"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-9 col-lg-8 col-xl-8 col-xxl-7">
+              <h3 class="fs-5 mb-3 text-white text-uppercase">
+                <mark class="text-white wave-highlight"
+                  >Bạn cần tư vấn trực tiếp?</mark
+                >
+              </h3>
+              <h2 class="display-3 text-white fw-bolder mb-4 pe-xl-5">
+                Hãy để lại thông tin liên hệ ở đây, chúng tôi sẽ liên lạc và
+                giải đáp các thắc mắc của bạn
+              </h2>
+              <
+                href="#!"
+                class="btn btn-accent btn-3xl rounded mb-0 text-nowrap"
+                >Thông tin liên hệ</ a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+       -->
+      <!-- Section - Portfolio -->
+      <!-- Masonry 1 - Bootstrap Brain Component -->
+      <section id="scrollspyPortfolio" class="py-5 py-xl-8 py-xxl-16">
+        <div class="container mb-5 mb-md-6 mb-xl-10">
+          <div class="row justify-content-md-center">
+            <div
+              class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center"
+            >
+              <h2 class="display-3 fw-bolder mb-4">
+                Các mẫu sản phẩm <br /><mark
+                  class="wave-highlight wave-highlight-yellow"
+                  ><span class="wave-font-hw display-1 text-accent fw-normal"
+                    >Website</span
+                  ></mark
+                >
+                của chúng tôi.
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container overflow-hidden">
+          <div class="row gy-2 g-md-2 g-xl-3 bsb-project-2-grid">
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-1.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInLeft">Canvas Lover</h3>
+                  <div class="text-white bsb-hover-fadeInRight">
+                    Photography
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale bsb-hover-scale-up"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-2.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInUp">Red Lava</h3>
+                  <div class="text-white bsb-hover-fadeInDown">Nature</div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-3.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInLeft">Jungle Book</h3>
+                  <div class="text-white bsb-hover-fadeInRight">Adventure</div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale bsb-hover-scale-up"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-4.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInUp">Wavy Road</h3>
+                  <div class="text-white bsb-hover-fadeInDown">Adventure</div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale bsb-hover-scale-up"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-5.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInUp">Golden Leaves</h3>
+                  <div class="text-white bsb-hover-fadeInDown">Photography</div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale bsb-hover-scale-up"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-6.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInUp">Minimal Notions</h3>
+                  <div class="text-white bsb-hover-fadeInDown">Design</div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-7.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInLeft">Bright Winks</h3>
+                  <div class="text-white bsb-hover-fadeInRight">Design</div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 bsb-project-2-item">
+              <figure
+                class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0"
+              >
+                <a href="#!">
+                  <img
+                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                    loading="lazy"
+                    src="./assets/img/portfolio/web-8.jpg"
+                    alt=""
+                  />
+                </a>
+                <figcaption>
+                  <h3 class="text-white bsb-hover-fadeInLeft">
+                    Innovative Day
+                  </h3>
+                  <div class="text-white bsb-hover-fadeInRight">
+                    Photography
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - About -->
+      <section
+        id="scrollspyAbout"
+        class="wave-bg-gray py-5 py-xl-8 py-xxl-16"
+      >
+        <!-- FAQ 1 - Bootstrap Brain Component -->
+        <div class="container">
+          <div class="row gy-5 gy-lg-0 gx-lg-6 gx-xxl-8 align-items-lg-center">
+            <div class="col-12 col-lg-6">
+              <div class="registration-form">
+                <form>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="username" placeholder="Họ và tên">
+                    </div>
+                  
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="phone-number" placeholder="Số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="birth-date" placeholder="Lĩnh vực kinh doanh">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary create-account">Đăng ký tư vấn</button>
+                    </div>
+                </form>
+                <!--
+                <div class="social-media">
+                    <h5>Sign up with social media</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
+                        <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                        <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
+                    </div>
+                </div>
+                -->
+            </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h2 class="display-3 fw-bolder mb-4">
+              
+                <mark class="wave-highlight wave-highlight-blue"
+                  ><span class="wave-font-hw display-1 text-accent fw-normal"
+                    >CD media</span
+                  ></mark>
+                
+              </h2>
+              <p class="fs-4 mb-5">
+              Chúng tôi là đội ngũ thiết kế website giàu kinh nghiệm và kiến thức vững chắc về SEO với cam kết đưa website của bạn lên một tầm cao mới!
+              </p>
+              <div class="accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                    Tại sao chọn chúng tôi?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Với sự sáng tạo không giới hạn, chúng tôi đem đến cho bạn một website đẹp mắt, tối ưu hóa trải nghiệm người dùng và đáp ứng hoàn hảo trên mọi thiết bị.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                    Dịch vụ chăm sóc sau bán hàng
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Đội ngũ hỗ trợ của chúng tôi sẽ luôn bên bạn để giải đáp mọi thắc mắc và hỗ trợ khi có vấn đề xảy ra.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Các dịch vụ khác?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Bên cạnh dịch vụ thiết kế website, chúng tôi còn cung cấp dịch vụ quay, chụp sản phẩm, thiết kế logo, banner, bộ nhận diện thương hiệu cho doanh nghiệp. 
+                      Với đội ngũ giàu kinh nghiệm trong ngành media.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      </section>
+
+      <!-- Section - Team -->
+      <!-- Team 1 - Bootstrap Brain Component -->
+      <!---
+      <section id="scrollspyTeam" class="py-5 py-xl-8 py-xxl-16">
+        <div class="container mb-5 mb-md-6 mb-xl-10">
+          <div class="row justify-content-md-center">
+            <div
+              class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center"
+            >
+              <h2 class="display-3 fw-bolder mb-4">
+                We are a group of <br /><mark
+                  class="wave-highlight wave-highlight-yellow"
+                  ><span class="wave-font-hw display-1 text-accent fw-normal"
+                    >innovative</span
+                  ></mark
+                >, experienced, and proficient teams.
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container overflow-hidden">
+          <div class="row gy-4 gy-lg-0 gx-xxl-5">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+              >
+                <div class="card-body p-0">
+                  <figure class="m-0 p-0">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./assets/img/team/team-img-1.jpg"
+                      alt=""
+                    />
+                    <figcaption class="m-0 p-4">
+                      <h4 class="mb-1">Flora Nyra</h4>
+                      <p class="text-secondary mb-0">Product Manager</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+              >
+                <div class="card-body p-0">
+                  <figure class="m-0 p-0">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./assets/img/team/team-img-2.jpg"
+                      alt=""
+                    />
+                    <figcaption class="m-0 p-4">
+                      <h4 class="mb-1">Evander Mac</h4>
+                      <p class="text-secondary mb-0">Art Director</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+              >
+                <div class="card-body p-0">
+                  <figure class="m-0 p-0">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./assets/img/team/team-img-3.jpg"
+                      alt=""
+                    />
+                    <figcaption class="m-0 p-4">
+                      <h4 class="mb-1">Taytum Elia</h4>
+                      <p class="text-secondary mb-0">Investment Planner</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+              >
+                <div class="card-body p-0">
+                  <figure class="m-0 p-0">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./assets/img/team/team-img-4.jpg"
+                      alt=""
+                    />
+                    <figcaption class="m-0 p-4">
+                      <h4 class="mb-1">Wylder Elio</h4>
+                      <p class="text-secondary mb-0">Financial Analyst</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+      -->
+
+      <!-- Section - Testimonial -->
+      <!-- Testimonial 2 - Bootstrap Brain Component -->
+      <section class="py-5 py-xl-8 py-xxl-16" id="scrollspyFeedback">
+        <div class="container mb-5 mb-md-6 mb-xl-10">
+          <div class="row justify-content-md-center">
+            <div
+              class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center"
+            >
+              <h2 class="display-3 fw-bolder mb-4">
+               <mark
+                  class="wave-highlight wave-highlight-yellow"
+                  ><span class="wave-font-hw display-1 text-accent fw-normal"
+                    >Feedback</span
+                  ></mark
+                > từ khách hàng
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-12 col-lg-4">
+              <div
+                class="card border-0 border-bottom border-primary shadow-sm wave-bg-lotion"
+              >
+                <div class="card-body p-4 p-xxl-5">
+                  <figure>
+                    <img
+                      class="img-fluid rounded rounded-circle mb-4 border border-5"
+                      loading="lazy"
+                      src="./assets/img/testimonial/testimonial-img-1.jpg"
+                      alt=""
+                    />
+                    <figcaption>
+                      <blockquote class="bsb-blockquote-icon mb-4">
+                        Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum
+                        euismod massa, at aliquet erat turpis quis diam. Class
+                        aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos.
+                      </blockquote>
+                      <h4 class="mb-2">Luna John</h4>
+                      <p class="fs-6 text-secondary mb-0">UX Designer</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div
+                class="card border-0 border-bottom border-primary shadow-sm wave-bg-lotion"
+              >
+                <div class="card-body p-4 p-xxl-5">
+                  <figure>
+                    <img
+                      class="img-fluid rounded rounded-circle mb-4 border border-5"
+                      loading="lazy"
+                      src="./assets/img/testimonial/testimonial-img-2.jpg"
+                      alt=""
+                    />
+                    <figcaption>
+                      <blockquote class="bsb-blockquote-icon mb-4">
+                        Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum
+                        euismod massa, at aliquet erat turpis quis diam. Class
+                        aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos.
+                      </blockquote>
+                      <h4 class="mb-2">Mark Smith</h4>
+                      <p class="fs-6 text-secondary mb-0">
+                        Marketing Specialist
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div
+                class="card border-0 border-bottom border-primary shadow-sm wave-bg-lotion"
+              >
+                <div class="card-body p-4 p-xxl-5">
+                  <figure>
+                    <img
+                      class="img-fluid rounded rounded-circle mb-4 border border-5"
+                      loading="lazy"
+                      src="./assets/img/testimonial/testimonial-img-4.jpg"
+                      alt=""
+                    />
+                    <figcaption>
+                      <blockquote class="bsb-blockquote-icon mb-4">
+                        Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum
+                        euismod massa, at aliquet erat turpis quis diam. Class
+                        aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos.
+                      </blockquote>
+                      <h4 class="mb-2">Luke Reeves</h4>
+                      <p class="fs-6 text-secondary mb-0">Sales Manager</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - Blog -->
+      <!-- Pricing 1 - Bootstrap Brain Component -->
+      <!--
+      <section id="scrollspyBlog" class="wave-bg-linen py-5 py-xl-8 py-xxl-16">
+        <div class="container">
+          <div class="row gy-5 gy-lg-0 gx-lg-8 align-items-center">
+            <div class="col-12 col-lg-5">
+              <h2 class="display-3 fw-bolder mb-4">
+                Our
+                <mark class="wave-highlight wave-highlight-yellow"
+                  ><span class="wave-font-hw display-1 text-accent fw-normal"
+                    >Blog</span
+                  ></mark
+                >
+              </h2>
+              <p class="fs-4 mb-4 mb-xl-5">
+                Stay tuned and updated by the latest updates from our blog.
+              </p>
+              <a href="#!" class="btn btn-2xl btn-primary rounded-pill"
+                >More News</a
+              >
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="row gy-4 gy-xxl-5 gx-xxl-5">
+                <div class="col-12 col-lg-6">
+                  <article>
+                    <figure
+                      class="rounded overflow-hidden mb-3 bsb-hover-overlay"
+                    >
+                      <a href="#!">
+                        <img
+                          class="img-fluid bsb-scale bsb-hover-scale-up"
+                          loading="lazy"
+                          src="./assets/img/blog/blog-image-1.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <figcaption>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          class="bi bi-eye text-white bsb-hover-fadeInRight"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                          />
+                          <path
+                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                          />
+                        </svg>
+                        <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">
+                          Read More
+                        </h4>
+                      </figcaption>
+                    </figure>
+                    <div class="entry-header mb-3">
+                      <div class="entry-meta">
+                        <ul class="nav mb-2">
+                          <li class="nav-item">
+                            <a
+                              class="nav-link d-inline px-1 link-primary"
+                              href="#!"
+                              >Business</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <h2 class="entry-title h4 mb-0">
+                        <a class="link-dark text-decoration-none" href="#!"
+                          >How to Improve Your Project Management Skills</a
+                        >
+                      </h2>
+                    </div>
+                    <div class="entry-footer">
+                      <div class="entry-meta">
+                        <ul class="nav mb-0 bsb-nav-sep">
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-muted p-0 pe-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-calendar3"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                                />
+                                <path
+                                  d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">7 Dec 2023</span>
+                            </a>
+                          </li>
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-secondary p-0 ps-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-chat-dots"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                                <path
+                                  d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">55</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <article>
+                    <figure
+                      class="rounded overflow-hidden mb-3 bsb-hover-overlay"
+                    >
+                      <a href="#!">
+                        <img
+                          class="img-fluid bsb-scale bsb-hover-scale-up"
+                          loading="lazy"
+                          src="./assets/img/blog/blog-image-2.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <figcaption>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          class="bi bi-eye text-white bsb-hover-fadeInLeft"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                          />
+                          <path
+                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                          />
+                        </svg>
+                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">
+                          Read More
+                        </h4>
+                      </figcaption>
+                    </figure>
+                    <div class="entry-header mb-3">
+                      <div class="entry-meta">
+                        <ul class="nav mb-2">
+                          <li class="nav-item">
+                            <a
+                              class="nav-link d-inline px-1 link-primary"
+                              href="#!"
+                              >Technology</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <h2 class="entry-title h4 mb-0">
+                        <a class="link-dark text-decoration-none" href="#!"
+                          >Modern Cybersecurity Trends to Watch in 2023</a
+                        >
+                      </h2>
+                    </div>
+                    <div class="entry-footer">
+                      <div class="entry-meta">
+                        <ul class="nav mb-0 bsb-nav-sep">
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-calendar3"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                                />
+                                <path
+                                  d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">12 Sep 2023</span>
+                            </a>
+                          </li>
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-secondary p-0 ps-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-chat-dots"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                                <path
+                                  d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">39</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <article>
+                    <figure
+                      class="rounded overflow-hidden mb-3 bsb-hover-overlay"
+                    >
+                      <a href="#!">
+                        <img
+                          class="img-fluid bsb-scale bsb-hover-scale-up"
+                          loading="lazy"
+                          src="./assets/img/blog/blog-image-3.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <figcaption>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          class="bi bi-eye text-white bsb-hover-fadeInDown"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                          />
+                          <path
+                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                          />
+                        </svg>
+                        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">
+                          Read More
+                        </h4>
+                      </figcaption>
+                    </figure>
+                    <div class="entry-header mb-3">
+                      <div class="entry-meta">
+                        <ul class="nav mb-2">
+                          <li class="nav-item">
+                            <a
+                              class="nav-link d-inline px-1 link-primary"
+                              href="#!"
+                              >Health</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <h2 class="entry-title h4 mb-0">
+                        <a class="link-dark text-decoration-none" href="#!"
+                          >Health Care Job Growth Outpaces Other Industries</a
+                        >
+                      </h2>
+                    </div>
+                    <div class="entry-footer">
+                      <div class="entry-meta">
+                        <ul class="nav mb-0 bsb-nav-sep">
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-calendar3"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                                />
+                                <path
+                                  d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">13 Jul 2023</span>
+                            </a>
+                          </li>
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-secondary p-0 ps-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-chat-dots"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                                <path
+                                  d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">61</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <article>
+                    <figure
+                      class="rounded overflow-hidden mb-3 bsb-hover-overlay"
+                    >
+                      <a href="#!">
+                        <img
+                          class="img-fluid bsb-scale bsb-hover-scale-up"
+                          loading="lazy"
+                          src="./assets/img/blog/blog-image-4.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <figcaption>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          class="bi bi-eye text-white bsb-hover-fadeInUp"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                          />
+                          <path
+                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                          />
+                        </svg>
+                        <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">
+                          Read More
+                        </h4>
+                      </figcaption>
+                    </figure>
+                    <div class="entry-header mb-3">
+                      <div class="entry-meta">
+                        <ul class="nav mb-2">
+                          <li class="nav-item">
+                            <a
+                              class="nav-link d-inline px-1 link-primary"
+                              href="#!"
+                              >Networking</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <h2 class="entry-title h4 mb-0">
+                        <a class="link-dark text-decoration-none" href="#!"
+                          >Five Essential Network Security Trends to Watch</a
+                        >
+                      </h2>
+                    </div>
+                    <div class="entry-footer">
+                      <div class="entry-meta">
+                        <ul class="nav mb-0 bsb-nav-sep">
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-calendar3"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                                />
+                                <path
+                                  d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">21 Feb 2023</span>
+                            </a>
+                          </li>
+                          <li class="nav-item text-secondary">
+                            <a
+                              class="nav-link link-secondary p-0 ps-3 d-inline-flex align-items-center"
+                              href="#!"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                fill="currentColor"
+                                class="bi bi-chat-dots"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                />
+                                <path
+                                  d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"
+                                />
+                              </svg>
+                              <span class="ms-2 fs-7">61</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+      <!-- Section - Contact -->
+      <!-- Contact 2 - Bootstrap Brain Component -->
+      <section id="scrollspyContact" class="py-5 py-xl-8 py-xxl-16">
+        <div class="container">
+          <div class="row gy-5 gy-lg-0 gx-lg-6 gx-xxl-8 align-items-lg-center">
+            <div class="col-12 col-lg-6">
+              <img
+                class="img-fluid rounded"
+                loading="lazy"
+                src="./assets/img/cta/web-designer.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-lg-6">
+              <h2 class="h1 mb-3">Liên hệ với chúng tôi</h2>
+              <p class="lead fs-4 text-secondary mb-5">
+                Chúng tôi luôn mong muốn được làm việc với quý khách hàng quan tâm tới dịch vụ của chúng tôi.
+                Nếu quý khách hàng có thắc mắc về dịch vụ và các chính sách của chúng tôi, vui lòng gửi thông tin theo mẫu ở đây hoặc
+                liên hệ với chúng tôi theo các cách thức dưới đây:
+                
+              </p>
+              <div class="d-flex mb-4">
+                <div class="me-4 text-primary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-geo"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="mb-3">Địa chỉ</h4>
+                  <address class="mb-0 text-secondary">
+                    Khu y tế kỹ thuật cao, Quận Bình Tân, Thành phố Hồ Chí Minh
+                  </address>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div class="me-4 text-primary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-telephone-outbound"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="mb-3">Điện thoại</h4>
+                  <p class="mb-0">
+                    <a
+                      class="link-secondary text-decoration-none"
+                      href="tel:+15057922430"
+                      >(505) 792-2430</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="me-4 text-primary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-envelope-at"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
+                    />
+                    <path
+                      d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="mb-3">E-Mail</h4>
+                  <p>
+                    <a
+                      class="link-secondary text-decoration-none"
+                      href="mailto:demo@yourdomain.com"
+                      >demo@yourdomain.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer 2 - Bootstrap Brain Component -->
+    <footer class="footer">
+      <!-- Widgets - Bootstrap Brain Component -->
+      <section class="wave-bg-lotion border-top py-4 py-md-5 py-xl-8">
+        <div class="container overflow-hidden">
+          <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+            <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+              <div class="widget">
+                <a href="#!">
+                  <img
+                    src="./assets/img/branding/logo-white.jpg"
+                    alt=""
+                    class="bsb-tpl-logo-footer"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+              <div class="widget">
+                <h4 class="widget-title mb-4">Liên hệ</h4>
+                <address class="mb-4">
+                  Khu y tế kỹ thuật cao, Quận Bình Tân, Thành phố Hồ Chí Minh
+                </address>
+                <p class="mb-1">
+                  <a
+                    class="link-secondary text-decoration-none"
+                    href="tel:+15057922430"
+                    >(505) 792-2430</a
+                  >
+                </p>
+                <p class="mb-0">
+                  <a
+                    class="link-secondary text-decoration-none"
+                    href="mailto:demo@yourdomain.com"
+                    >demo@yourdomain.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+              <div class="widget">
+                <h4 class="widget-title mb-4">Xem thêm</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="link-secondary text-decoration-none"
+                      >About</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="link-secondary text-decoration-none"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="link-secondary text-decoration-none"
+                      >Advertise</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="link-secondary text-decoration-none"
+                      >Terms of Service</a
+                    >
+                  </li>
+                  <li class="mb-0">
+                    <a href="#!" class="link-secondary text-decoration-none"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-xl-4">
+              <div class="widget">
+                <h4 class="widget-title mb-4">Đăng ký nhận thông tin</h4>
+                <p class="mb-4">
+                  Đăng ký để nhận thông tin về các chương trình khuyến mãi và dịch vụ của chúng tôi
+                  
+                </p>
+                <form action="#!">
+                  <div class="row gy-4">
+                    <div class="col-12">
+                      <div class="input-group">
+                        <span class="input-group-text" id="email-addon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-envelope"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          value=""
+                          placeholder="Địa chỉ Email"
+                          aria-label="email"
+                          aria-describedby="email-addon"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-grid">
+                        <button class="btn btn-primary" type="submit">
+                          Đăng ký
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright - Bootstrap Brain Component -->
+      <div class="wave-bg-lotion border-top py-4 py-md-5 py-xl-8">
+        <div class="container overflow-hidden">
+          <div class="row gy-4 gy-md-0">
+            <div class="col-xs-12 col-md-7 order-1 order-md-0">
+              <div class="copyright text-center text-md-start">
+                &copy; 2023. All Rights Reserved.
+              </div>
+            
+            </div>
+
+            <div class="col-xs-12 col-md-5 order-0 order-md-1">
+              <ul class="nav justify-content-center justify-content-md-end">
+                <li class="nav-item">
+                  <a class="nav-link link-dark px-2" href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark px-2" href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark px-2" href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-twitter"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark px-2" href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript Files: Vendors -->
+    <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="./assets/vendor/isotope/packery-mode.pkgd.min.js"></script>
+    <script src="./assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Javascript Files: Controllers -->
+    <script src="./assets/controller/project-2.js"></script>
+    <script src="./assets/controller/global.js"></script>
+  </body>
+</html>

@@ -21646,6 +21646,45 @@ fieldset:disabled .btn {
 .services .services-inner:hover {
   color: #fff !important;
 }
+/* Định nghĩa cỡ nút */
+.zoom-button {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #dc3545;
+  --bs-btn-border-color: #dc3545;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb2d3b;
+  --bs-btn-hover-border-color: #b02a37;
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b02a37;
+  --bs-btn-active-border-color: #a52834;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #dc3545;
+  --bs-btn-disabled-border-color: #dc3545;
+}
+
+/* Định nghĩa animation cho nút */
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1); /* Khi bắt đầu, kích thước là bình thường */
+  }
+  50% {
+    transform: scale(
+      1.2
+    ); /* Khi chạy đến giữa animation, phóng to lên 1.2 lần kích thước ban đầu */
+  }
+  100% {
+    transform: scale(
+      1
+    ); /* Khi hoàn thành animation, quay lại kích thước ban đầu */
+  }
+}
+
+/* Áp dụng animation vào nút */
+.zoom-button {
+  animation: zoomAnimation 2s infinite; /* 3s là thời gian mỗi chu kỳ animation, infinite là để animation chạy liên tục */
+}
 
 @media (max-width: 576px) {
   .registration-form form {
